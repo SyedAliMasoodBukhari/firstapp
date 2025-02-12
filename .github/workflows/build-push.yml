@@ -24,6 +24,6 @@ jobs:
               run: |
                 docker tag alimasood/firstapp ${{ secrets.DOCKERHUB_USERNAME }}/firstapp
 
-            - name: Push Docker Image
+            - name: Pushing Docker Image
               run: |
                 docker push ${{ secrets.DOCKERHUB_USERNAME }}/firstapp
